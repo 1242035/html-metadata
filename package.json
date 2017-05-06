@@ -1,6 +1,6 @@
 {
-  "name": "html-metadata",
-  "version": "1.6.3",
+  "name": "metadata-parser",
+  "version": "1.0.0",
   "description": "Scrapes metadata of several different standards",
   "main": "index.js",
   "dependencies": {
