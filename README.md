@@ -1,4 +1,4 @@
-html-metadata
+metadata-parser
 =============
 
 # MetaData html scraper and parser for Node.js (supports Promises and callback style)
@@ -9,14 +9,14 @@ Planned is support for RDFa, AGLS, and other yet unheard of metadata types. Cont
 
 ## Install
 
-	npm install git://github.com/wikimedia/html-metadata.git
+	npm install metadata-parser
 
 ## Usage
 
 Promise-based:
 
 ```js
-var scrape = require('html-metadata');
+var scrape = require('metadata-parser');
 
 var url = "http://blog.woorank.com/2013/04/dublin-core-metadata-for-seo-and-usability/";
 
@@ -28,7 +28,7 @@ scrape(url).then(function(metadata){
 Callback-based:
 
 ```js
-var scrape = require('html-metadata');
+var scrape = require('metadata-parser');
 
 var url = "http://blog.woorank.com/2013/04/dublin-core-metadata-for-seo-and-usability/";
 
@@ -59,7 +59,7 @@ Callback-based:
 ```js
 var cheerio = require('cheerio');
 var request = require('request');
-var parseDublinCore = require('html-metadata').parseDublinCore;
+var parseDublinCore = require('metadata-parser').parseDublinCore;
 
 var url = "http://blog.woorank.com/2013/04/dublin-core-metadata-for-seo-and-usability/";
 
